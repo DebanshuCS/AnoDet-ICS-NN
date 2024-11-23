@@ -26,10 +26,10 @@ Filename format: SWaT-P{A}-{B}.net
 
 A means [Process ID].
 SWaT has six processes.
-We have six models for each process.
+six models for each process.
 
 B means [Duplicate training ID].
-We made two independent training sessions for each model (process), and chose a better one, which has smaller training loss.
+Two independent training sessions for each model (process), and chose a better one, which has smaller training loss.
 
 ### dat/
 
@@ -42,11 +42,10 @@ This folder has two files.
 ### evaluation/
 
 This folder includes custom-evaluation codes.
-We made the range-based false positive/negative checker.
-We published the details to another paper.
+Range-based false positive/negative checker.
 
-In short, as mentioned in the paper, we regard any detection in 'the attack range + 15 minutes' as a true positive, while the precision-and-recall score comes from sample-by-sample answers (labels).
-The reason we added 15 minutes is why industrial control systems need some time to get stable after the attack.
+In short, any detection in 'the attack range + 15 minutes' as a true positive, while the precision-and-recall score comes from sample-by-sample answers (labels).
+Why 15 minutes ? Industrial control systems need some time to get stable after the attack.
 
 Evaluation.py reads the result file (dat/detection) and prints output.
 You have to specify the input file with -i.
@@ -70,7 +69,7 @@ Hyper-parameters.
 ### db.py
 
 You can use any database you like.
-I chose [InfluxDB](https://www.influxdata.com/products/influxdb-overview/) for saving all results.
+Here, [InfluxDB](https://www.influxdata.com/products/influxdb-overview/) is selected to store all results.
 Most of the figures (graphs) are the screenshot of [Grafana](https://grafana.com/) pages.
 
 ### extract_anomaly_probs.py
