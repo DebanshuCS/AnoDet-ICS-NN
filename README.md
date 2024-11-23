@@ -1,6 +1,6 @@
 # Anomaly Detection for SWaT Dataset using Sequence-to-Sequence Neural Networks
 
-This repo includes source codes and pre-trained models, "Anomaly Detection for Industrial Control Systems Using Sequence-to-Sequence Neural Networks."
+This repository contains source code and pre-trained models for anomaly detection in industrial control systems using neural networks.
 
 ## Requirements
 - Python 3
