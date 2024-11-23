@@ -1,4 +1,4 @@
-# Anomaly Detection for SWaT Dataset using Sequence-to-Sequence Neural Networks
+# AnoDet-ICS-NN
 
 This repository contains source code and pre-trained models for anomaly detection in industrial control systems using neural networks.
 
